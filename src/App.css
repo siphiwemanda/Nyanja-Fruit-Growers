@@ -1,8 +1,29 @@
+
 .App {
   text-align: center;
   display: flex;
   flex-direction: column;
   background-image: linear-gradient(182.5004105643768deg, rgba(228, 239, 255,1) 1.9156883671291356%,rgba(255, 255, 255,1) 50.79509071504802%);
+  padding: 30px;
+}
+ul{
+  list-style-type: none;
+}
+.navbar li{
+  display:inline;
+  padding: 20px;
+}
+.navbar {
+  list-style-type: none;
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  Padding-bottom:30px;
+}
+.Header{
+  display:flex;
 }
 
 

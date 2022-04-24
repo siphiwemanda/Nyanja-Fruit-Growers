@@ -3,8 +3,9 @@ import {NavLink} from "react-router-dom";
 const Navbar = () => {
     return (
 <div className="navbar">
-    <h1> Nyanja Fruit Growers</h1>
-    <ul>
+
+    <ul className="list">
+        <li>Nyanja Fruit Growers</li>
         <li>About us</li>
         <li>Our Produce</li>
         <li> Member Spotlight</li>
@@ -13,7 +14,6 @@ const Navbar = () => {
         <li>Join Us</li>
     </ul>
 </div>
-
         );
 }
 
