@@ -1,0 +1,9 @@
+.MemberSpotlight{
+    display:flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+.MemberSpotlightText{
+ background-color:#E5EFD1;
+}
