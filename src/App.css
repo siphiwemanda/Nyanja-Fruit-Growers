@@ -24,6 +24,8 @@ ul{
 }
 .Header{
   display:flex;
+  background-color:#E5EFD1;
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 }
 
 
