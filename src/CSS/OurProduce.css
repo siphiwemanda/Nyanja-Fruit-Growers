@@ -7,3 +7,10 @@
     font-size: 72px;
     font-family: DM Serif Display, serif
 }
+hr{
+    width: 30%;
+}
+
+.OurProduceSection{
+    display: flex;
+}
