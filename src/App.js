@@ -1,7 +1,6 @@
 import './App.css';
 import Navbar from "./Component/Navbar";
 import Header from "./Component/Header";
-import AboutUs from "./Component/AboutUs";
 import OurProduce from "./Component/OurProduce";
 import MemberSpotlight from "./Component/MemberSpotlight";
 import OurCustomers from "./Component/OurCustomers";
@@ -12,7 +11,6 @@ function App() {
     <div className="App">
         <Navbar/>
         <Header/>
-        <AboutUs/>
         <OurProduce/>
         <MemberSpotlight/>
         <OurCustomers/>
