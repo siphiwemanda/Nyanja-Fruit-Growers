@@ -4,7 +4,7 @@ import Header from "./Component/Header";
 import OurProduce from "./Component/OurProduce";
 import MemberSpotlight from "./Component/MemberSpotlight";
 import OurCustomers from "./Component/OurCustomers";
-import ContactSection from "./Component/ContactSection";
+import Footer from "./Component/Footer"
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
         <OurProduce/>
         <MemberSpotlight/>
         <OurCustomers/>
-        <ContactSection/>
+        <Footer/>
     </div>
   );
 }

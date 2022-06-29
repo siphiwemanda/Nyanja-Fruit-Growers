@@ -1,15 +1,13 @@
-
+import '../CSS/MemberSpotlight.css'
 const MemberSpotlight =() =>{
     return (
         <div className="MemberSpotlight">
-            <h2> Member Spotlight </h2>
+            <hr/>
+            <h1> Member Spotlight </h1>
             <div className='MemberSpotlightText'>
-            <h3> Mr. Chopa Manda</h3>
-                <p>Mr. Chopa Manda is a farma based in Salima district. He owns a 150 hectare farm at Chimonjo village, TA Khombedza.  (Add coordinates here/ Google pin) He has been developing the farm since 2006(?) He specialises in mango (hybrid varieties) and currently has XXX mature mango trees He also  produces guavas and oranges as well as honey. He also solar dries some of his fruit.
-                    During the rainy season he intercrops soya and groundnuts.
-                    Mr. Manda currently employs XX permenant workers, as well as XX seasonal workers throughout the year.
-                    Mr. Manda can be contacted at: (details here)
-                    Next Month: XXXXXXXX (name of next memebr to be featured)
+            <h3> Mr. Gred Automation</h3>
+                <p>
+                    Congue lectus nec tellus parturient ipsum justo porta sollicitudin, ullamcorper eget ultricies lobortis venenatis et tempus sodales fusce litora porttitor velit lacinia nisl, ligula pretium. Ante vel scelerisque tempus posuere curae; hac cras sem tempus mi nullam mauris nulla sapien dis. Consectetuer odio consequat. Elit tristique arcu nisi ultricies purus parturient sem habitasse est feugiat feugiat dictum tempor ridiculus senectus ipsum potenti rutrum, rutrum ipsum ullamcorper eros laoreet ullamcorper, rutrum. Nisl ornare, tellus laoreet vulputate eget. Odio varius diam turpis dolor hac nam condimentum sociosqu platea sem et gravida fames, non montes tristique conubia. Torquent mus gravida interdum nulla Duis elementum sapien justo ad fames sollicitudin elementum felis velit habitant amet curabitur eros urna eu, venenatis luctus nec hymenaeos. Lacus odio lorem dictumst adipiscing..
                 </p>
             </div>
             <div>

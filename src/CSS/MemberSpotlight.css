@@ -1,1 +1,10 @@
+.MemberSpotlight{
+    padding-top: 200px;
+    padding-left: 12.5%;
+    padding-right: 12.5%;
+}
 
+.MemberSpotlight h1{
+    font-size: 72px;
+    font-family: DM Serif Display, serif
+}

@@ -8,9 +8,11 @@
     font-family: DM Serif Display, serif
 }
 hr{
-    width: 30%;
+    width: 50%;
 }
 
 .OurProduceSection{
     display: flex;
+    padding-top: 25px;
+    gap: 10px;
 }
