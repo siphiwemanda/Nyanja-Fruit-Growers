@@ -1,0 +1,20 @@
+.navbar{
+display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+
+}
+.navBarHeader{
+    font-size: 18px;
+    color: #2C2830;
+
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    font-size: 13px;
+}
+.navbar li{
+    display:inline;
+    padding-left: 1rem;
+}

@@ -1,9 +1,10 @@
 .MemberSpotlight{
-    display:flex;
-    gap: 30px;
-    align-items: center;
-    justify-content: center;
+    padding-top: 200px;
+    padding-left: 12.5%;
+    padding-right: 12.5%;
 }
-.MemberSpotlightText{
- background-color:#E5EFD1;
+
+.MemberSpotlight h1{
+    font-size: 72px;
+    font-family: DM Serif Display, serif
 }
