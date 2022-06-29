@@ -1,4 +1,3 @@
-import '../CSS/OurProduce.css'
 const OurProduce = ()  =>{
     return (
         <div className="OurProduce">

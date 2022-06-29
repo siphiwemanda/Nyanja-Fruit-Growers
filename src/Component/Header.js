@@ -8,17 +8,9 @@ const Header = () => {
             </div>
             <div className="FruitGrid">
                 <img src={mangoes}  width={200} height={200} alt="Fruit"/>
-                <img src={mangoes}  width={200} height={200} alt="Fruit"/>
-                <img src={mangoes}  width={200} height={200} alt="Fruit"/>
-                <img src={mangoes}  width={200} height={200} alt="Fruit"/>
-                <img src={mangoes}  width={200} height={200} alt="Fruit"/>
-
-
-
             </div>
 
         </div>
     )
 }
-
 export default Header;

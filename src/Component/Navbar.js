@@ -1,9 +1,11 @@
+
 const Navbar = () => {
     return (
 <div className="navbar">
-
+ <ul>
+     <li className="navBarHeader">Nyanja Fruit Growers</li>
+ </ul>
     <ul className="list">
-        <li className="btn-animated">Nyanja Fruit Growers</li>
         <li className="btn btn-animated">About us</li>
         <li className="btn btn-animated">Our Produce</li>
         <li className="btn btn-animated"> Member Spotlight</li>

@@ -1,4 +1,4 @@
-import '../CSS/MemberSpotlight.css'
+
 const MemberSpotlight =() =>{
     return (
         <div className="MemberSpotlight">
