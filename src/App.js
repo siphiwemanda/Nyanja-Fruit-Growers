@@ -10,11 +10,13 @@ function App() {
   return (
     <div className="App">
         <Navbar/>
-        <Header/>
+
+
+{/*        <Header/>
         <OurProduce/>
         <MemberSpotlight/>
         <OurCustomers/>
-        <Footer/>
+        <Footer/>*/}
     </div>
   );
 }

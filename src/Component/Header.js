@@ -17,7 +17,7 @@ const Header = () => {
                 <li className="btn btn-animated">Contact Us/Join Us</li>
             </div>
             <div className="HeaderImg">
-                <img src={mangoes}  width={540} height={650} alt="Fruit"/>
+    {/*           <img src={mangoes}  alt="Fruit"/>*/}
             </div>
 
         </div>
