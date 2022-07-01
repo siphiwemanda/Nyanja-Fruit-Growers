@@ -7,8 +7,8 @@ const buttonTheme = createTheme({
     },
     palette: {
         primary: {
-            main: '#0971f1',
-            darker: '#053e85',
+            main: '#837D88',
+            darker: '#2C2830',
         },
         neutral: {
             main: '#64748B',
@@ -27,18 +27,14 @@ export default function Navbar(){
 
            <div className=" hidden md:flex space-x-2">
                <ThemeProvider theme={buttonTheme}>
-               <Button variant="text" color="neutral" >About us</Button>
-               <Button variant="text">Our Produce</Button>
-               <Button variant="text"> Member Spotlight</Button>
-               <Button variant="text">Our Customers</Button>
-               <Button variant="text">Contact Us/Join Us</Button>
+               <Button variant="text" color="primary" >About us</Button>
+               <Button variant="text" color="primary">Our Produce</Button>
+               <Button variant="text" color="primary"> Member Spotlight</Button>
+               <Button variant="text" color="primary">Our Customers</Button>
+               <Button variant="outlined" color="primary">Contact Us/Join Us</Button>
                </ThemeProvider>
-
            </div>
            </div>
-
-
-
        </nav>
 
 

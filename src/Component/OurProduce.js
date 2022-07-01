@@ -3,7 +3,7 @@ import fruitBox from '../IMG/organic-food.png'
 import line from '../IMG/remove.png'
 const OurProduce = ()  =>{
     return (
-        <div className="container flex-col items-center px-6 mx-auto space-y-0 md:space-y-0 my-10">
+        <div className="container flex flex-col items-center px-6 mx-auto space-y-0 md:space-y-0 my-10">
 
             <div className="flex flex-col items-center px-6 mx-auto mt-10 space-y-0 md:space-y-0">
                 <img  className="self-center" src ={line} width={50} height={50} alt="Line"/>
