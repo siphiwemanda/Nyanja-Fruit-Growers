@@ -1,13 +1,17 @@
-import '../CSS/OurCustomers.css'
 const OurCustomers = () => {
     return (
-        <div className="OurCustomers">
-            <div>
-            <h1>Our Customers </h1>
+        <div className="container flex flex-row  items-center bg-JustPurple px-6 mx-auto mt-10 space-x-6">
+            <div className="text-JustWhite md:text-6xl text-5xl p-6">
+            <h1 >Our Customers </h1>
             </div>
-            <div className="logos">
-            <p> Nyanja Fruit Growers has agreements with a number of offtakers including Malawi Mangos, Kapani and supplies to Sunbird hotels, Shoprite, Chipiku Plus (include their logos) above)
-                We are supported by ................</p>
+            <div className="text-JustWhite p-6">
+                <ul>
+                    <li>Malawi Mangos</li>
+                    <li>Kapani</li>
+                    <li>Sunbird hotels</li>
+                    <li>Shoprite</li>
+                    <li> Chipiku Plus</li>
+                </ul>
             </div>
 
         </div>
