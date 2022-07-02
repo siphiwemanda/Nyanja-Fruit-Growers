@@ -16,22 +16,21 @@ const buttonTheme = createTheme({
         },
     },
 });
-export default function Navbar(){
+export default function Navbar({onClick}){
     return (
 
        <nav className="relative container m-auto mx-auto p-6">
            <div className="flex items-center justify-between">
            <div className="p2-2">
-               Nyanja Fruit Growers
+               <h1 className="md:text-xl text-sm"> Nyanja Fruit Growers</h1>
            </div>
 
            <div className=" hidden md:flex space-x-2">
                <ThemeProvider theme={buttonTheme}>
-               <Button variant="text" color="primary" >About us</Button>
+               <Button variant="text" color="primary" onClick={onClick}>About us</Button>
                <Button variant="text" color="primary">Our Produce</Button>
                <Button variant="text" color="primary"> Member Spotlight</Button>
-               <Button variant="text" color="primary">Our Customers</Button>
-               <Button variant="outlined" color="primary">Contact Us/Join Us</Button>
+               <Button variant="outlined" color="primary" onClick={onClick}>Contact Us/Join Us</Button>
                </ThemeProvider>
            </div>
            </div>

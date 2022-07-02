@@ -4,7 +4,7 @@ import instagram from '../IMG/instagram.png'
 import line from '../IMG/remove.png'
 const Footer = () => {
     return(
-        <div className="bg-Grey mt-10">
+        <div className="bg-Grey mt-10 ">
             <div className="container mx-auto flex flex-col md:flex-row items-center px-6">
                 <div className="flex flex-col  items-center">
                     <h4 className="text-center pt-5 md:text-2xl">Nyanja Fruit Growers</h4>
