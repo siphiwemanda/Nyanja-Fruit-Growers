@@ -1,7 +1,6 @@
 import Button from '@mui/material/Button'
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import {IconButton} from "@mui/material";
-import DeleteIcon from '@mui/icons-material/Delete';
 import MenuIcon from '@material-ui/icons/Menu';
 
 const buttonTheme = createTheme({
@@ -45,8 +44,8 @@ export default function Navbar({onClick}){
 
                <div className="md:hidden">
                    <div>
-                       <IconButton>
-                       <MenuIcon onClick={showMenu}/>
+                       <IconButton onClick={showMenu}>
+                       <MenuIcon/>
                    </IconButton>
                    </div>
                    <div id="BurgerMenu" className="hidden">

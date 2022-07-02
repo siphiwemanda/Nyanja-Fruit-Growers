@@ -1,7 +1,7 @@
 export default function AboutUsPage(){
     return(
 
-        <div className="container mx-auto">
+        <div className="container mx-auto p-6">
             <h1 className="text-7xl text-center"> About US</h1>
 
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque odio justo, pulvinar eget leo id,
