@@ -1,20 +1,37 @@
+import React from 'react';
 import Navbar from "./Component/Navbar";
-import Header from "./Component/Header";
-import OurProduce from "./Component/OurProduce";
-import MemberSpotlight from "./Component/MemberSpotlight";
-import OurCustomers from "./Component/OurCustomers";
 import Footer from "./Component/Footer"
+import Main  from "./Component/Main";
+import ContactForm from "./Component/ContactForm";
 
-function App() {
-  return (
-    <div className="App">
-        <Navbar/>
-        <Header/>
-        <OurProduce/>
-        <MemberSpotlight/>
-        <OurCustomers/>
-        <Footer/>
-    </div>
-  );
+class App extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state ={
+            MainPage:true,
+            Click:false,
+        }
+    }
+    onClick = () =>{
+        console.log('click')
+        this.setState({
+            Click:this.state.Click = true,
+            MainPage: this.state.MainPage = false
+        });
+    }
+    render() {
+        let comp = <Main/>;
+        if (this.state.MainPage === false){
+            comp = <ContactForm/>
+        }
+        return(
+        <div className="App">
+            <Navbar onClick ={this.onClick}/>
+            {comp}
+            <Footer />
+        </div>
+    )}
+
+
 }
 export default App;
