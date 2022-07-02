@@ -12,11 +12,18 @@ class App extends React.Component {
             Click:false,
         }
     }
-    onClick = function(){
+    onClick = () =>{
         console.log('click')
+        this.setState({
+            Click:this.state.Click = true,
+            MainPage: this.state.MainPage = false
+        });
     }
     render() {
         let comp = <Main/>;
+        if (this.state.MainPage === false){
+            comp = <ContactForm/>
+        }
         return(
         <div className="App">
             <Navbar onClick ={this.onClick}/>
