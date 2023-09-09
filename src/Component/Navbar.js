@@ -22,7 +22,6 @@ export default function Navbar({onClick}){
     function showMenu() {
         const btn = document.getElementById('BurgerMenu')
         btn.classList.toggle('hidden')
-
     }
 
     return (
@@ -30,15 +29,15 @@ export default function Navbar({onClick}){
        <nav className="relative container m-auto mx-auto p-6">
            <div className="flex items-center justify-between">
            <div className="p2-2">
-               <h1 className="md:text-xl text-sm"> Nyanja Fruit Growers</h1>
+               <button className="md:text-xl text-sm" id = "Home" onClick={onClick}> Nyanja Fruit Growers</button>
            </div>
 
            <div className=" hidden md:flex space-x-2">
                <ThemeProvider theme={buttonTheme}>
-               <Button variant="text" color="primary" onClick={onClick}>About us</Button>
-               <Button variant="text" color="primary">Our Produce</Button>
-               <Button variant="text" color="primary"> Member Spotlight</Button>
-               <Button variant="outlined" color="primary" onClick={onClick}>Contact Us/Join Us</Button>
+               <Button variant="text" color="primary" id = "aboutUs" onClick={onClick}>About us</Button>
+               <Button variant="text" color="primary" id = "ourProduce" onClick={onClick}>Our Produce</Button>
+               <Button variant="text" color="primary" id = "memberSpotlight" onClick={onClick}> Member Spotlight</Button>
+               <Button variant="outlined" color="primary" id = "contact" onClick={onClick}>Contact Us/Join Us</Button>
                </ThemeProvider>
            </div>
 
@@ -49,12 +48,12 @@ export default function Navbar({onClick}){
                    </IconButton>
                    </div>
                    <div id="BurgerMenu" className="hidden">
-                       <div className="absolute flex flex-col items-center self-end py-8 mt-6 space-y-6 bg-JustWhite sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+                       <div className="absolute flex flex-col items-center self-end py-8 mt-6 space-y-6 bg-JustWhite sm:w-auto sm:self-center left-6 right-6 drop-shadow-md" onClick={showMenu}>
                            <ThemeProvider theme={buttonTheme}>
-                           <Button variant="text" color="primary" onClick={onClick}>About us</Button>
-                           <Button variant="text" color="primary">Our Produce</Button>
-                           <Button variant="text" color="primary"> Member Spotlight</Button>
-                           <Button variant="outlined" color="primary" onClick={onClick}>Contact Us/Join Us</Button>
+                               <Button variant="text" color="primary" id = "aboutUs" onClick={onClick}>About us</Button>
+                               <Button variant="text" color="primary" id = "ourProduce" onClick={onClick}>Our Produce</Button>
+                               <Button variant="text" color="primary" id = "memberSpotlight" onClick={onClick}> Member Spotlight</Button>
+                               <Button variant="outlined" color="primary" id = "contact" onClick={onClick}>Contact Us/Join Us</Button>
                        </ThemeProvider>
                        </div>
                    </div>
