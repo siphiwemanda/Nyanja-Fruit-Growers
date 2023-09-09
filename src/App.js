@@ -21,53 +21,44 @@ class App extends React.Component {
     onClick = (e) =>{
         console.log(e.target.id)
         const target = e.target.id
-        if (target === "aboutUs"){
-            this.setState({
-                AboutUsPage: this.state.AboutUsPage = true,
-                ContactPage: this.state.ContactPage = false,
-                MainPage: this.state.MainPage = false,
-                MemberSpotlight: this.state.MemberSpotlight = false,
-                ProducePage: this.state.ProducePage = false
-            });
+        let aboutUs = false
+        let contact = false
+        let ourProduce = false
+        let home = false
+        let memberSpotlight = false
+
+        switch(target) {
+            case aboutUs:
+                aboutUs = true
+                break;
+            case contact:
+                contact = true
+                break;
+            case ourProduce:
+                ourProduce = true
+                break;
+            case home:
+                home = true
+                break;
+            case memberSpotlight:
+                memberSpotlight = true
+                break;
+            default:
+                home = true
         }
-        if (target === "contact"){
-            this.setState({
-                AboutUsPage: this.state.AboutUsPage = false,
-                ContactPage: this.state.ContactPage = true,
-                MainPage: this.state.MainPage = false,
-                MemberSpotlight: this.state.MemberSpotlight = false,
-                ProducePage: this.state.ProducePage = false
-            });
+        this.changeState(aboutUs, contact, ourProduce, home, memberSpotlight)
         }
 
-        if (target === "ourProduce"){
-            this.setState({
-                AboutUsPage: this.state.AboutUsPage = false,
-                ContactPage: this.state.ContactPage = false,
-                MainPage: this.state.MainPage = false,
-                MemberSpotlight: this.state.MemberSpotlight = false,
-                ProducePage: this.state.ProducePage = true
-            });
-        }
-        if (target === "Home"){
-            this.setState({
-                AboutUsPage: this.state.AboutUsPage = false,
-                ContactPage: this.state.ContactPage = false,
-                MainPage: this.state.MainPage = true,
-                MemberSpotlight: this.state.MemberSpotlight = false,
-                ProducePage: this.state.ProducePage = false
-            });
-        }
-        if (target === "memberSpotlight"){
-            this.setState({
-                AboutUsPage: this.state.AboutUsPage = false,
-                ContactPage: this.state.ContactPage = false,
-                MainPage: this.state.MainPage = false,
-                MemberSpotlight: this.state.MemberSpotlight = true,
-                ProducePage: this.state.ProducePage = false
-            });
-        }
-    }
+    changeState (aboutUs, contact, ourProduce, home, memberSpotlight){
+        this.setState((previousState) => {
+            const newState = { ...previousState };
+            newState.state.AboutUsPage = aboutUs;
+            newState.state.ContactPage = contact;
+            newState.state.MainPage = home;
+            newState.state.MemberSpotlight = memberSpotlight;
+            newState.state.ProducePage = ourProduce;
+            return newState;
+    })}
 
     render() {
         let comp = <Main/>;
