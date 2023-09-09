@@ -64,7 +64,7 @@ class App extends React.Component {
                 ContactPage: this.state.ContactPage = false,
                 MainPage: this.state.MainPage = false,
                 MemberSpotlight: this.state.MemberSpotlight = true,
-                OurProduce: this.state.OurProduce = false
+                ProducePage: this.state.ProducePage = false
             });
         }
     }
