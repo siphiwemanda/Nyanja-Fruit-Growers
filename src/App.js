@@ -51,8 +51,6 @@ class App extends React.Component {
         }
 
     changeState (aboutUs, contact, ourProduce, home, memberSpotlight){
-        console.log(aboutUs + "AboutUs", contact + "contact",ourProduce + "ourproduce",home + "home",memberSpotlight + "memeberspotlight")
-        console.log(this.state)
         this.setState({
             AboutUsPage : aboutUs,
             ContactPage : contact,
@@ -60,7 +58,6 @@ class App extends React.Component {
             MemberSpotlight :memberSpotlight,
             ProducePage: ourProduce,
     })
-    console.log(this.state)
     }
 
     render() {
