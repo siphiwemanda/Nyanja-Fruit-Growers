@@ -26,6 +26,7 @@ class App extends React.Component {
         let ourProduce = false
         let home = false
         let memberSpotlight = false
+        console.log(target)
 
         switch(target) {
             case aboutUs:
@@ -50,15 +51,17 @@ class App extends React.Component {
         }
 
     changeState (aboutUs, contact, ourProduce, home, memberSpotlight){
-        this.setState((previousState) => {
-            const newState = { ...previousState };
-            newState.state.AboutUsPage = aboutUs;
-            newState.state.ContactPage = contact;
-            newState.state.MainPage = home;
-            newState.state.MemberSpotlight = memberSpotlight;
-            newState.state.ProducePage = ourProduce;
-            return newState;
-    })}
+        console.log(aboutUs + "AboutUs", contact + "contact",ourProduce + "ourproduce",home + "home",memberSpotlight + "memeberspotlight")
+        console.log(this.state)
+        this.setState({
+            AboutUsPage : aboutUs,
+            ContactPage : contact,
+            MainPage :home,
+            MemberSpotlight :memberSpotlight,
+            ProducePage: ourProduce,
+    })
+    console.log(this.state)
+    }
 
     render() {
         let comp = <Main/>;
