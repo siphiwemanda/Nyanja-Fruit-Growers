@@ -19,35 +19,35 @@ class App extends React.Component {
         }
     }
     onClick = (e) =>{
-        console.log(e.target.id)
         const target = e.target.id
         let aboutUs = false
         let contact = false
         let ourProduce = false
         let home = false
         let memberSpotlight = false
-        console.log(target)
 
         switch(target) {
-            case aboutUs:
+            case "aboutUs":
                 aboutUs = true
                 break;
-            case contact:
+            case "contact":
                 contact = true
                 break;
-            case ourProduce:
+            case "ourProduce":
                 ourProduce = true
                 break;
-            case home:
+            case "home":
                 home = true
                 break;
-            case memberSpotlight:
+            case "memberSpotlight":
                 memberSpotlight = true
                 break;
             default:
                 home = true
         }
+
         this.changeState(aboutUs, contact, ourProduce, home, memberSpotlight)
+
         }
 
     changeState (aboutUs, contact, ourProduce, home, memberSpotlight){
